@@ -43,7 +43,7 @@ if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serv
 <script type="module">
 import{initializeApp}from'https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js';
 import{getFirestore,collection,addDoc,getDocs,deleteDoc,doc,updateDoc,query,orderBy,serverTimestamp}from'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
-import{getAuth,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,onAuthStateChanged,signOut}from'https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.
+import {getAuth,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js";
 const firebaseConfig = {
   apiKey: "AIzaSyDbeSLtHz_IZ8pGX0xEjyH4MkJ5ibS9TeA",
   authDomain: "aquarium-oshikatsu-test.firebaseapp.com",

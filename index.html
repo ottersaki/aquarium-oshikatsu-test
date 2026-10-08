@@ -43,8 +43,15 @@ if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serv
 <script type="module">
 import{initializeApp}from'https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js';
 import{getFirestore,collection,addDoc,getDocs,deleteDoc,doc,updateDoc,query,orderBy,serverTimestamp}from'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
-import{getAuth,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,onAuthStateChanged,signOut}from'https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js';
-const firebaseConfig={apiKey:'AIzaSyBF2zPqr0Yrz9IMckI0paJdjSWkwLGWigA',authDomain:'aquarium-oshikatsu.firebaseapp.com',projectId:'aquarium-oshikatsu',storageBucket:'aquarium-oshikatsu.firebasestorage.app',messagingSenderId:'54021392245',appId:'1:54021392245:web:2ce5f231627bf2e30c753c',measurementId:'G-YMSL9R0C2C'};
+import{getAuth,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,onAuthStateChanged,signOut}from'https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.
+const firebaseConfig = {
+  apiKey: "AIzaSyDbeSLtHz_IZ8pGX0xEjyH4MkJ5ibS9TeA",
+  authDomain: "aquarium-oshikatsu-test.firebaseapp.com",
+  projectId: "aquarium-oshikatsu-test",
+  storageBucket: "aquarium-oshikatsu-test.firebasestorage.app",
+  messagingSenderId: "684952197652",
+  appId: "1:684952197652:web:605406c941e60650d02501"
+};
 const app=initializeApp(firebaseConfig),db=getFirestore(app),auth=getAuth(app),provider=new GoogleAuthProvider();
 // Existing records path intentionally unchanged to preserve prior data.
 const records=collection(db,'records'),animals=collection(db,'animals');
